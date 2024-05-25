@@ -1,0 +1,141 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+    margin: 0;
+}
+.container{
+    background:  hsl(0, 0%, 100%);
+    border-radius: 1.5rem 1.5rem 10rem 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 650px;
+}
+.birth{
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputs p{
+    font-size: 0.875rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color:  hsl(0, 1%, 44%);
+    margin: 0;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    align-self: flex-start;
+}
+.inputs input{
+    width: 100px;
+    padding: 0.75rem;
+    font-size: 32px;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+.horizontal-line{
+    flex-grow: 1;
+    width: calc(100% - 70px);
+    height: 1px;
+    background-color: #220f0f;
+    margin-right: 10px
+}
+.submit-btn{
+    background-color:  hsl(259, 100%, 65%);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.submit-btn svg {
+    fill: none;
+    stroke: white;
+    stroke-width: 1;
+}
+.age{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    color: hsl(0, 0%, 8%);
+}
+.age-item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.age-item p{
+    margin: 0;
+}
+.age-item p.label{
+    color: hsl(0, 0%, 8%);
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.age-item p:first-child{
+    color:  hsl(259, 100%, 65%);
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+
+@media only screen and (max-width: 375px){
+    .container{
+        width: 90%;
+        max-width: 300px;
+        padding : 1.5rem;
+        border-radius: 1rem 1rem 6rem 1rem;
+    }
+
+    .birth{
+        width : 50%;
+        gap: 0.5rem
+    }
+    .inputs{
+        margin: 0;
+    } 
+    .inputs input{
+        width: 80px;
+        padding: 0.5rem;
+        font-size: 25px;
+    }
+    .submit-btn{
+        align-self: center;
+    }
+
+    .age-item p:first-child{
+        font-size: 3rem;
+    }
+
+    .age-item p.label{
+        font-size: 3rem;
+    }
+
+}
